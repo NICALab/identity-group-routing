@@ -6,7 +6,7 @@ const trajectoryCaptions = {
   stimulus: 'Figure A5. Source and held-out trajectories, colored by stimulus label within each recording.'
 };
 function updateTrajectory(key) {
-  const src = `assets/trajectories-${key}.png`;
+  const src = `assets/trajectories-${key}.svg`;
   const img = document.getElementById('trajectory-image');
   img.src = src;
   img.alt = `Latent trajectories colored by ${key} for source fish 59 and 63 and three held-out fish. Rows compare identity-guided routing, CEBRA, MARBLE, LFADS, and Joint PCA.`;

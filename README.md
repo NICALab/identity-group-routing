@@ -57,7 +57,7 @@ Each neuron’s biological features determine its soft membership in latent grou
 From neural population activity, the model predicts either the animal’s behavior or the visual stimulus being presented. Behavior decoding estimates swim power in WARP and running speed in the Allen datasets; stimulus decoding classifies the stimulus type. These are evaluated as separate tasks.
 
 <p align="center">
-  <img src="docs/assets/decoding-example.png" width="570" alt="A WARP recording with visual stimuli, neural calcium activity, and movement vigor aligned in time">
+  <img src="docs/assets/decoding-example.svg" width="570" alt="A WARP recording with visual stimuli, neural calcium activity, and movement vigor aligned in time">
 </p>
 
 **Decoding example.** A WARP recording showing visual stimuli (top), calcium activity across neurons (middle), and movement vigor (bottom), aligned in time.
@@ -85,11 +85,11 @@ Mean ± standard deviation. ↑ Higher is better. \* Adapted to calcium signals.
 
 Latent trajectories for two source fish and held-out fish, compared with CEBRA, MARBLE, LFADS, and Joint PCA. The source-trained model is applied to held-out fish without retraining.
 
-![Source and held-out neural trajectories colored by time](docs/assets/trajectories-time.png)
+![Source and held-out neural trajectories colored by time](docs/assets/trajectories-time.svg)
 
 **Figure 2.** Source and held-out trajectories, colored by time within each recording.
 
-Trajectory colorings: [Time](docs/assets/trajectories-time.png) · [Behavior](docs/assets/trajectories-behavior.png) · [Stimulus](docs/assets/trajectories-stimulus.png).
+Trajectory colorings: [Time](docs/assets/trajectories-time.svg) · [Behavior](docs/assets/trajectories-behavior.svg) · [Stimulus](docs/assets/trajectories-stimulus.svg).
 
 On held-out WARP animals, our method obtains a temporal distance correlation of 0.633 ± 0.078, a normalized latent-neighbor time gap of 0.145 ± 0.009, and local trajectory linearity of 0.911 ± 0.006 (Table 2).
 
