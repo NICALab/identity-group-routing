@@ -3,31 +3,143 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Neuronal Identity as an Organizational Basis for Analyzing Neural Population Dynamics — NeurIPS 2026.">
-  <title>Identity Group Routing · NeurIPS 2026</title>
-  <style>
-    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #182c39; background: #f5f7f6; }
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 32px 24px; }
-    main { width: 100%; max-width: 900px; padding: clamp(28px, 6vw, 72px); background: white; border: 1px solid #dce5e1; border-radius: 24px; }
-    .label { margin: 0 0 28px; color: #26715e; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-    h1 { margin: 0; font-size: clamp(30px, 5vw, 52px); line-height: 1.16; letter-spacing: -.035em; text-wrap: balance; }
-    .status { margin: 28px 0 10px; font-size: 20px; font-weight: 600; }
-    .description { color: #586973; line-height: 1.7; margin: 0 0 32px; }
-    a { display: inline-block; padding: 13px 20px; border-radius: 8px; background: #1d5d4f; color: white; text-decoration: none; font-weight: 600; }
-    a:hover { background: #134638; }
-    a:focus-visible { outline: 3px solid #459d85; outline-offset: 5px; }
-    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e6ece9; color: #586973; font-size: 13px; }
-  </style>
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Organizing neurons by biological identity enables neural decoding and manifold analysis in unseen animals, without retraining or neuron-wise correspondence.">
+  <meta property="og:title" content="Neuronal Identity as an Organizational Basis for Analyzing Neural Population Dynamics">
+  <meta property="og:description" content="Identity-guided group routing for neural population analysis across animals and recording sessions. KAIST · NeurIPS 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nicalab.github.io/identity-group-routing/">
+  <meta property="og:image" content="https://nicalab.github.io/identity-group-routing/assets/concept.webp">
+  <meta name="citation_title" content="Neuronal Identity as an Organizational Basis for Analyzing Neural Population Dynamics">
+  <meta name="citation_author" content="Seungjae Han">
+  <meta name="citation_author" content="Joshua Yedam You">
+  <meta name="citation_author" content="Soi Kim">
+  <meta name="citation_author" content="Minho Eom">
+  <meta name="citation_author" content="Jinho Park">
+  <meta name="citation_author" content="Seunghee Park">
+  <meta name="citation_author" content="Byeongwook Lee">
+  <meta name="citation_author" content="Young-Gyu Yoon">
+  <meta name="citation_publication_date" content="2026">
+  <link rel="icon" type="image/svg+xml" href="assets/project-mark.svg?v=10">
+  <link rel="canonical" href="https://nicalab.github.io/identity-group-routing/">
+  <link rel="preload" href="assets/fonts/source-sans-3-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/source-sans-3-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=20261027-30">
+  <script src="site.js" defer></script>
+  <title>Neuronal Identity as an Organizational Basis for Analyzing Neural Population Dynamics</title>
 </head>
 <body>
-  <main>
-    <p class="label">NeurIPS 2026 · Identity Group Routing</p>
-    <h1>Neuronal Identity as an Organizational Basis for Analyzing Neural Population Dynamics</h1>
-    <p class="status">Project page coming soon.</p>
-    <p class="description">We’re preparing the full project page. In the meantime, explore the official code repository.</p>
-    <a href="https://github.com/NICALab/identity-group-routing">View code on GitHub <span aria-hidden="true">↗</span></a>
-    <footer>NICALab · Identity Group Routing</footer>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main">
+    <header class="paper-header">
+      <div class="project-marks">
+        <img class="project-logo" src="assets/project-logo.svg?v=14" width="178" height="96" alt="IGR — Identity-guided routing">
+        <a class="venue" href="https://neurips.cc/virtual/2026/loc/sydney/poster/155788" aria-label="NeurIPS 2026 paper"><img src="assets/neurips-wordmark.svg" width="156" height="70" alt="Neural Information Processing Systems"></a>
+      </div>
+      <h1>Neuronal Identity as an Organizational Basis for Analyzing Neural Population Dynamics</h1>
+      <div class="authors" aria-label="Authors">
+        <div class="author-row">
+          <span>Seungjae Han<sup>*</sup></span><span>Joshua Yedam You<sup>*</sup></span><span>Soi Kim<sup>*</sup></span><span>Minho Eom</span><span>Jinho Park</span><span>Seunghee Park</span>
+        </div>
+        <div class="author-row corresponding-authors">
+          <span>Byeongwook Lee<sup>†</sup></span><span>Young-Gyu Yoon<sup>†</sup></span>
+        </div>
+      </div>
+      <p class="author-notes">* Equal contribution &nbsp; † Corresponding authors</p>
+      <div class="affiliation-marks">
+        <a href="https://www.kaist.ac.kr/en/" aria-label="KAIST"><img class="kaist-logo" src="assets/kaist.png" width="144" height="42" alt="KAIST"></a>
+        <a href="https://nica.kaist.ac.kr/" aria-label="NICA Lab"><img class="nica-logo" src="assets/nica-lab-horizontal.png" width="160" height="44" alt="NICA Lab — Neuro-Instrumentation &amp; Computational Analysis Lab"></a>
+        <a href="https://cnnl.kaist.ac.kr/" aria-label="CNNL"><img class="cnnl-logo" src="assets/cnnl-lab.png" width="180" height="44" alt="Computational and Network Neuroscience Laboratory"></a>
+      </div>
+      <nav class="paper-links" aria-label="Paper resources">
+        <span class="resource-link unavailable" role="link" aria-disabled="true" title="The arXiv link will be added here"><img src="assets/arxiv.svg" width="17" height="17" alt="">arXiv <small>soon</small></span>
+        <a class="resource-link" href="https://neurips.cc/virtual/2026/loc/sydney/poster/155788"><img src="assets/neurips.svg?v=2" width="24" height="24" alt="">NeurIPS</a>
+        <a class="resource-link" href="https://github.com/NICALab/identity-group-routing"><img src="assets/github.svg" width="18" height="18" alt="">GitHub</a>
+      </nav>
+    </header>
+
+    <figure class="teaser">
+      <a href="assets/concept.webp" target="_blank" rel="noopener" aria-label="Open the overview figure at full size"><img src="assets/concept.webp" width="2600" height="709" alt="Transcriptomic, spatial, regional, and electrophysiological features organize neurons from different subjects into shared groups for population dynamics analysis."></a>
+      <figcaption>Overview. Multimodal biological features organize neurons into corresponding groups across subjects, providing a shared basis for analyzing neural population dynamics.</figcaption>
+    </figure>
+
+    <section id="abstract" class="text-section">
+      <h2>Abstract</h2>
+      <p>Individual neurons exhibit diverse molecular, morphological, and electrophysiological properties that shape their distinct roles in neural circuits. While these multimodal features are largely shared across individuals, they remain an underutilized source of information in analyzing neural population dynamics. We posit that these shared biological profiles provide a common reference for relating neural dynamics across subjects and recording sessions. Our framework leverages this structure by routing neurons into latent groups based on their biological profiles and analyzing population dynamics through group-level representations. Because these assignments are anchored in biological properties that are consistent across subjects, the learned organization supports transfer to unseen animals without retraining or neuron-wise correspondence. We evaluate our framework on whole-brain calcium imaging in larval zebrafish and large-scale electrophysiology in the mouse visual cortex. Across both species and recording modalities, the framework delivers state-of-the-art performance in both neural decoding and manifold analysis: it achieves superior decoding of behavior and stimulus labels while better preserving the temporal consistency and local geometric structure of latent trajectories on unseen data. Our experiments demonstrate that not only does providing biological features improve baseline performance, but our proposed framework achieves even stronger results by using these properties to explicitly structure the population rather than treating them as auxiliary inputs. Together, these results suggest that organizing neural populations by their multimodal biological features offers a promising framework for generalizing population dynamics across subjects and recording sessions.</p>
+    </section>
+
+    <section id="method">
+      <h2>Identity-guided routing</h2>
+      <p class="section-text">Each neuron’s biological features determine its soft membership in latent groups. A shared activity encoder represents each neuron’s activity window, and routing-weighted aggregation produces group-level representations. A group interaction module maps these representations to a population embedding for neural decoding or manifold learning. The construction is invariant to neuron order.</p>
+      <figure>
+        <a href="assets/architecture.webp" target="_blank" rel="noopener" aria-label="Open the framework figure at full size"><img src="assets/architecture.webp" width="2600" height="899" alt="Multimodal identity encoding and soft routing aggregate neural activity into group tokens for manifold learning, stimulus classification, or behavior decoding."></a>
+        <figcaption>Identity-guided routing framework. Manifold learning, stimulus classification, and behavior decoding are evaluated as separate downstream objectives.</figcaption>
+      </figure>
+    </section>
+
+    <section id="results">
+      <h2>Identity-guided routing improves neural decoding in unseen animals</h2>
+      <p class="section-text">From neural population activity, the model predicts either the animal’s behavior or the visual stimulus being presented. Behavior decoding estimates swim power in WARP and running speed in the Allen datasets; stimulus decoding classifies the stimulus type. These are evaluated as separate tasks.</p>
+      <figure class="decoding-figure">
+        <a href="assets/decoding-example.png" target="_blank" rel="noopener" aria-label="Open the decoding example at full size"><img src="assets/decoding-example.png" width="782" height="454" alt="A WARP recording with visual stimuli above a calcium activity heatmap and a movement vigor trace below, aligned in time."></a>
+        <figcaption>Decoding example. A WARP recording showing visual stimuli (top), calcium activity across neurons (middle), and movement vigor (bottom), aligned in time.</figcaption>
+      </figure>
+      <p class="section-text">Models are trained on source animals or sessions and applied directly to held-out recordings, with frozen parameters and no neuron-wise correspondence.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Neural decoding results across all three datasets">
+        <table id="decoding-table">
+          <caption class="sr-only">Behavior Pearson correlation and stimulus balanced accuracy under direct held-out transfer across three datasets. Values are mean and standard deviation.</caption>
+          <thead><tr><th scope="col">Method</th><th scope="col">Behavior <span>Pearson correlation ↑</span></th><th scope="col">Stimulus <span>Balanced accuracy ↑</span></th></tr></thead>
+          <tbody data-dataset="warp">
+            <tr class="dataset-heading"><th colspan="3" scope="rowgroup">WARP <span>Zebrafish</span></th></tr>
+            <tr class="ours"><th scope="row">Identity-guided routing <small>Ours</small></th><td>0.793 <span>± 0.015</span></td><td>0.835 <span>± 0.029</span></td></tr>
+            <tr><th scope="row">POYO*</th><td>0.304 <span>± 0.120</span></td><td>0.153 <span>± 0.032</span></td></tr>
+            <tr><th scope="row">NEDS*</th><td>0.248 <span>± 0.207</span></td><td>0.195 <span>± 0.034</span></td></tr>
+            <tr><th scope="row">DeepSets</th><td>0.160 <span>± 0.081</span></td><td>0.161 <span>± 0.011</span></td></tr>
+          </tbody>
+          <tbody data-dataset="brain">
+            <tr class="dataset-heading"><th colspan="3" scope="rowgroup">Allen Brain Observatory <span>Mouse</span></th></tr>
+            <tr class="ours"><th scope="row">Identity-guided routing <small>Ours</small></th><td>0.734 <span>± 0.008</span></td><td>0.893 <span>± 0.012</span></td></tr>
+            <tr><th scope="row">POYO</th><td>0.526 <span>± 0.043</span></td><td>0.220 <span>± 0.022</span></td></tr>
+            <tr><th scope="row">NEDS</th><td>0.500 <span>± 0.042</span></td><td>0.424 <span>± 0.043</span></td></tr>
+            <tr><th scope="row">DeepSets</th><td>0.615 <span>± 0.022</span></td><td>0.684 <span>± 0.027</span></td></tr>
+          </tbody>
+          <tbody data-dataset="functional">
+            <tr class="dataset-heading"><th colspan="3" scope="rowgroup">Allen Functional Connectivity <span>Mouse</span></th></tr>
+            <tr class="ours"><th scope="row">Identity-guided routing <small>Ours</small></th><td>0.694 <span>± 0.058</span></td><td>0.896 <span>± 0.017</span></td></tr>
+            <tr><th scope="row">POYO</th><td>0.554 <span>± 0.080</span></td><td>0.211 <span>± 0.008</span></td></tr>
+            <tr><th scope="row">NEDS</th><td>0.454 <span>± 0.036</span></td><td>0.398 <span>± 0.020</span></td></tr>
+            <tr><th scope="row">DeepSets</th><td>0.588 <span>± 0.096</span></td><td>0.730 <span>± 0.044</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Mean ± standard deviation. ↑ Higher is better. * Adapted to calcium signals. Identity features are constructed from complete held-out recordings; held-out behavior and stimulus labels are used only for evaluation. Tables 1 and A4.</p>
+    </section>
+
+    <section id="manifolds">
+      <h2>Identity-guided routing preserves temporal structure in unseen animals</h2>
+      <p class="section-text">Latent trajectories for two source fish and held-out fish, compared with CEBRA, MARBLE, LFADS, and Joint PCA. The source-trained model is applied to held-out fish without retraining.</p>
+      <div class="control"><label for="coloring">Color by:</label><select id="coloring"><option value="time">Time</option><option value="behavior">Behavior</option><option value="stimulus">Stimulus</option></select></div>
+      <figure class="trajectory-figure">
+        <a id="trajectory-link" href="assets/trajectories-time.webp" target="_blank" rel="noopener" aria-label="Open the trajectory comparison at full size"><img id="trajectory-image" src="assets/trajectories-time.webp" width="1414" height="950" alt="Latent trajectories colored by time for source fish 59 and 63 and three held-out fish. Rows compare identity-guided routing, CEBRA, MARBLE, LFADS, and Joint PCA."></a>
+        <figcaption id="trajectory-caption" aria-live="polite">Figure 2. Source and held-out trajectories, colored by time within each recording.</figcaption>
+      </figure>
+      <p class="section-text">On held-out WARP animals, our method obtains a temporal distance correlation of 0.633 ± 0.078, a normalized latent-neighbor time gap of 0.145 ± 0.009, and local trajectory linearity of 0.911 ± 0.006 (Table 2).</p>
+    </section>
+
+    <section id="citation">
+      <h2>BibTeX</h2>
+      <div class="citation-actions"><button type="button" id="copy-citation">Copy</button><span id="copy-status" role="status"></span></div>
+      <pre><code id="bibtex">@misc{han2026neuronal,
+  title = {Neuronal Identity as an Organizational Basis for
+           Analyzing Neural Population Dynamics},
+  author = {Han, Seungjae and You, Joshua Yedam and Kim, Soi and
+            Eom, Minho and Park, Jinho and Park, Seunghee and
+            Lee, Byeongwook and Yoon, Young-Gyu},
+  year = {2026},
+  url = {https://neurips.cc/virtual/2026/loc/sydney/poster/155788}
+}</code></pre>
+    </section>
   </main>
+  <footer><a href="mailto:bwlee@kaist.ac.kr,ygyoon@kaist.ac.kr">Contact</a></footer>
 </body>
 </html>

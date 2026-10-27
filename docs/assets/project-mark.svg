@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 96" fill="none">
+  <title>Identity-guided routing</title>
+  <g stroke="#555b60" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M54 18C54 9 49 4 42 4C34 4 29 9 29 15C21 13 14 19 16 26C8 28 5 37 11 43C3 47 3 57 10 61C5 68 10 77 20 77C20 86 30 92 40 91C48 91 54 84 54 76Z M29 15C30.5 15 31.8 15.5 32.5 16.3 M16 26C20 24 24 26 25 30 M11 43C12 46 16 48 19 47 M10 61C14 63 17 63 20 60 M20 77C22.8 77 24.8 77.9 26 79.2"/>
+  </g>
+  <g transform="translate(34 14.5543)">
+  <g stroke-width="2.6" stroke-linecap="round">
+    <path d="M8 6h8c12 0 12 6 24 6h10M8 18h8c12 0 12-6 24-6" stroke="#bb5668"/>
+    <path d="M8 27h8c12 0 12 6 24 6h10M8 39h8c12 0 12-6 24-6" stroke="#426d9b"/>
+    <path d="M8 48h8c12 0 12 6 24 6h10M8 60h8c12 0 12-6 24-6" stroke="#438261"/>
+  </g>
+  <g fill="#bb5668"><circle cx="8" cy="6" r="3.5"/><circle cx="8" cy="18" r="3.5"/><rect x="47" y="7" width="10" height="10" rx="2"/></g>
+  <g fill="#426d9b"><circle cx="8" cy="27" r="3.5"/><circle cx="8" cy="39" r="3.5"/><rect x="47" y="28" width="10" height="10" rx="2"/></g>
+  <g fill="#438261"><circle cx="8" cy="48" r="3.5"/><circle cx="8" cy="60" r="3.5"/><rect x="47" y="49" width="10" height="10" rx="2"/></g>
+  </g>
+</svg>
