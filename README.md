@@ -1,14 +1,20 @@
 <p align="center">
-  <img src="docs/assets/project-logo.svg" width="160" alt="IGR — Identity-guided routing">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/project-logo-dark.svg">
+    <img src="docs/assets/project-logo.svg" width="160" alt="IGR — Identity-guided routing">
+  </picture>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://neurips.cc/virtual/2026/loc/sydney/poster/155788"><img src="docs/assets/neurips-wordmark.svg" width="156" alt="NeurIPS"></a>
+  <a href="https://neurips.cc/virtual/2026/loc/sydney/poster/155788"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/neurips-wordmark-dark.svg">
+    <img src="docs/assets/neurips-wordmark.svg" width="156" alt="NeurIPS">
+  </picture></a>
 </p>
 
 <h1 align="center">Neuronal Identity as an Organizational Basis for Analyzing Neural Population Dynamics</h1>
 
 <p align="center">
-  Seungjae Han<sup><b>*</b></sup> &nbsp; Joshua Yedam You<sup><b>*</b></sup> &nbsp; Soi Kim<sup><b>*</b></sup> &nbsp; Minho Eom &nbsp; Jinho Park &nbsp; Seunghee Park<br>
-  Byeongwook Lee<sup><b>†</b></sup> &nbsp; Young-Gyu Yoon<sup><b>†</b></sup>
+  Seungjae&nbsp;Han<sup><b>*</b></sup> &nbsp; Joshua&nbsp;Yedam&nbsp;You<sup><b>*</b></sup> &nbsp; Soi&nbsp;Kim<sup><b>*</b></sup> &nbsp; Minho&nbsp;Eom &nbsp; Jinho&nbsp;Park &nbsp; Seunghee&nbsp;Park<br>
+  Byeongwook&nbsp;Lee<sup><b>†</b></sup> &nbsp; Young-Gyu&nbsp;Yoon<sup><b>†</b></sup>
 </p>
 
 <p align="center"><sup><b>*</b></sup> Equal contribution &nbsp; <sup><b>†</b></sup> Corresponding authors</p>
@@ -18,7 +24,10 @@
   &nbsp;&nbsp;
   <a href="https://nica.kaist.ac.kr/"><img src="docs/assets/nica-lab-horizontal.png" width="160" alt="NICA Lab"></a>
   &nbsp;&nbsp;
-  <a href="https://cnnl.kaist.ac.kr/"><img src="docs/assets/cnnl-lab.png" width="180" alt="Computational and Network Neuroscience Laboratory"></a>
+  <a href="https://cnnl.kaist.ac.kr/"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/cnnl-lab-dark.svg">
+    <img src="docs/assets/cnnl-lab.png" width="180" alt="Computational and Network Neuroscience Laboratory">
+  </picture></a>
 </p>
 
 <p align="center">
