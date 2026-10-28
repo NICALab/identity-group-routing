@@ -32,7 +32,7 @@
 
 <p align="center">
   <a href="https://nicalab.github.io/identity-group-routing/"><b>Project page</b></a>
-  &nbsp;·&nbsp; arXiv (coming soon)
+  &nbsp;·&nbsp; <a href="https://arxiv.org/abs/2610.36745">arXiv</a>
   &nbsp;·&nbsp; <a href="https://neurips.cc/virtual/2026/loc/sydney/poster/155788">NeurIPS 2026</a>
 </p>
 
